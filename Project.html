@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav {
+            background:white;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color:black;
+            text-decoration: none;
+        }
+
+        .signup-btn {
+            background: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .container {
+        position: relative;
+        width: 100vw;
+        height: 80vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url("https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/tenweb_media_FSW5R4gk.webp");
+    
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text {
+        
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .text h1{
+       
+        text-align: center;
+
+    }
+    .text p{
+        margin-right: 10%;
+        font-weight: lighter;
+    }
+    .button1 {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color:black;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        font-weight: lighter;
+    }
+    .button2 {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:transparent;
+        color:white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        border: 1px solid white;
+        font-weight: lighter;
+        
+    }
+/* find donor */
+button {
+    display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color:black;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid white;
+        margin: 0 10px;
+        font-weight: lighter;
+        cursor: pointer;
+        height: 50px;
+    }
+
+    #bigContainer6 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(220, 220, 220, 0.8);
+        display: none;
+        z-index: 2;
+        backdrop-filter: blur(5px);
+    }
+
+    #closeButton6 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        color: #333;
+        font-size: 20px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .small-container6 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 10vh auto;
+    }
+
+    .item6 {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+
+    .item6 img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .whatsapp-logo {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    /* container 2 */
+
+    .container2 {
+        display: flex;
+        /* align-items: center; */
+        margin-top: 6%;
+        height: 83vh;
+
+    }
+    .container2image {
+        flex: 1;
+        overflow: hidden;
+    }
+    .container2image img {
+        width: 100%;
+        height: auto;
+    }
+    .container2text {
+        flex: 1;
+        padding: 5px;
+    }
+/* 
+    container 3 */
+
+    .container3 {
+        display: flex;
+        /* align-items: center; */
+        margin-top: 6%;
+        height: 83vh;
+
+    }
+    .container3image {
+        flex: 1;
+        overflow: hidden;
+    }
+    .container3image img {
+        width: 100%;
+        height: auto;
+    }
+    .container3text {
+        flex: 1;
+        padding: 5px;
+    }
+
+    /* container 4 */
+    .container4 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .sub-container4{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            
+           
+        }
+        .small-container4{
+           border: 2px solid #c9d1d9;
+           padding: 1px;
+           overflow: hidden;
+        }
+
+        .search-container4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+           
+        }
+
+        /* container5 */
+
+
+        .container5-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.container5 {
+    background-color: black;
+    color: white; 
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.star-rating {
+    color: yellow;
+    font-size: 1.5em; 
+}
+
+
+.container5 img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.element-container5, .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.element-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.element {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* footer */
+footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .footer-container > div {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+    }
+    
+    .footer-logo img {
+        max-width: 150px;
+    }
+    
+    .footer-links ul, .footer-info p, .footer-legal p {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .footer-links ul li, .footer-info p, .footer-legal p {
+        margin-bottom: 10px;
+    }
+    
+    .footer-links a, .footer-social a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover, .footer-social a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-social {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .footer-social a {
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
+    
+    .footer-social a i {
+        transition: color 0.3s;
+    }
+    
+    .footer-social a:hover i {
+        color: #ff6347;
+    }
+    
+    
+    .footer-info, .footer-legal {
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <ul>
+            
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="ProfileForm.html">Profile</a></li>
+            <li><a href="about_us.html">Donation Process
+            </a></li>
+            <li><a href="about_us.html">Contact Us</a></li>
+            <li><a href="index.html" class="signup-btn">SignUp </a></li>
+            <li><a href="login.html" class="signup-btn">Login </a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>Donate Blood, Save Lives</h1>
+            <p>Join us in our mission to save lives by donating blood. Your contribution can make a significant difference to those in need. Learn more about the importance of blood donations and how you can help.</p>
+      
+        <button id="toggleButton6">Find Nearby</button>
+         
+        <a href="#" class="button2">Learn More</a>
+        <div id="bigContainer6">
+            <button id="closeButton6">&times;</button>
+            <div class="small-container6">
+                <div class="item6">
+                    
+                    <i class="fas fa-user"></i>
+                    <span>Dhruv</span>
+                    <a href="https://wa.me/919354504261?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                    
+                </div>
+                <div class="item6">
+                    <i class="fas fa-user"></i>
+                    <span>Krishna Bhardwaj</span>
+                    <a href="https://wa.me/918700332014?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+
+
+                </div>
+                <div class="item6">
+                    <i class="fas fa-user"></i>
+                    <span>Prenavats</span>
+                    <a href="https://wa.me/919654732234?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                </div>
+                <div class="item6">
+                    <i class="fas fa-user"></i>
+                    <span>Prav</span>
+                    <a href="https://wa.me/917017533739?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                </div>
+                <div class="item6">
+                    <i class="fas fa-user"></i>
+                    <span>Ishita</span>
+                    <a href="https://wa.me/919319610602?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                </div>
+                <div class="item6">
+                    <i class="fas fa-user"></i>
+                    <span>Harshit Dubey</span>
+                    <a href="https://wa.me/919569792678?text=Hi%20I%20am%20a%20member%20of%20RaktSetu.%20Are%20you%20willing%20to%20donate?" style="font-size: 48px; color: green">
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const toggleButton6 = document.getElementById('toggleButton6');
+        const bigContainer6 = document.getElementById('bigContainer6');
+        const closeButton6 = document.getElementById('closeButton6');
+    
+        toggleButton6.addEventListener('click', function() {
+            bigContainer6.style.display = 'block';
+        });
+    
+        closeButton6.addEventListener('click', function() {
+            bigContainer6.style.display = 'none';
+        });
+    </script>
+      
+    </div>
+    </div>
+<!-- container 2 -->
+    <div class="container2">
+       
+        <div class="container2text">
+            <h1 style="padding-top: 10%;font-size: 3em;">Our Essential Blood Bank Services</h1>
+            <p style="padding-top: 2%;padding-right: 10%;font-size: 1.35em; font-family: serif ;">We offer a range of services to support blood donation and ensure a steady supply of blood for those in need. Learn more about our initiatives and how you can contribute.</p>
+            <ul style="padding-top: 2%;padding-right: 10%;font-size: 1.35em; font-family: serif ;">
+            <li>Blood Donation Drives</li>
+            <li>Emergency Blood Supplies</li>
+            <li>Educational Resources on Blood Groups</li>
+        </ul>
+        </div>
+        <div class="container2image">
+            <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/tenweb_media_j3UP4FUz.webp" alt="Image">
+        </div>
+    </div>
+
+    <!-- container 3 -->
+    <div class="container3">
+        <div class="container3image">
+            <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/tenweb_media_p43MUV7b.webp" alt="Image">
+        </div>
+       
+        <div class="container3text">
+            <h1 style="padding-top: 10%;padding-left: 10%;font-size: 3em;">Our Mission and Values</h1>
+            <p style="padding-left: 10%;font-size: 1.35em; font-family: serif ;">At B, we are dedicated to saving lives through blood donations. Our team of experts works tirelessly to ensure a safe and reliable blood supply for those in need. Join us in making a difference.</p>
+          
+        </div>
+      
+    </div>
+
+<!-- container 4 -->
+<div class="container4">
+    <h1>Find  Nearby Location Of Blood Donation Center</h1>
+    <div class="search-container4">
+      <input type="text" placeholder="Search..." />
+      <button style="border: 2px ;">Search</button>
+  </div>
+
+    <div class="sub-container4">
+        <div class="small-container4" style="width: 25%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7486790289!2d77.43084647433119!3d28.667242875645822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf135593c7c01%3A0x7f60f89778ac9a0e!2sGhaziabad%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1720118680658!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="small-container4" style="width: 25%; "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4353240862547!2d77.41917137433015!3d28.64668137565697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1aa6d48ee77%3A0x72b3d941a8138528!2sHind%20Charitable%20Blood%20Centre!5e0!3m2!1sen!2sin!4v1720118769374!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="small-container4" style="width: 25%; "><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.284008042776!2d77.4397129743304!3d28.65121367565458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1dd72b19a9b%3A0x2038ffb20c8fe2e9!2sSangam%20Charitable%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1720119450869!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="small-container4" style="width: 25%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.896051084879!2d77.43967307433094!3d28.66283097564818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1b8c3deba15%3A0x86fa0be9fdc937f6!2sLife%20Line%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1720119494795!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  
+</div>
+
+ <!-- container 5 -->
+ <div class="element-container5">
+    <h2 class="element-heading">What People Say</h2>
+</div>
+<div class="element">
+    Real stories from donors, recipients, and healthcare professionals.
+</div>
+
+<div class="container5-wrapper">
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_male_C48XchXo.webp" alt="Person 1"><p>Dhruv Gujjar(Blood Donor)</p>
+        <div class="star-rating">★★★★★</div>
+<p>Donating blood was a fulfilling experience. Knowing that my donation could save lives is incredibly rewarding.	</p>
+    </div>
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_female_u4ZaVKHR.webp" alt="Person 2"><p>Prena Vats(Blood Recipent)</p>
+        <div class="star-rating">★★★★★</div>
+        <p>Receiving a blood transfusion during my surgery was life-saving. I'm forever grateful to the donors.</p>
+       
+    </div>
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_female_8FZc47oX.webp" alt="Person 3"><p>Ishita(HealthCare Professional)</p>
+        <div class="star-rating">★★★☆☆</div>
+    <p>Blood donations are crucial in our line of work. They help us save countless lives every day.		</p>
+    </div>
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_male_NBHQsa9g.webp" alt="Person 4"><p>Krishna Bhardwaj(HealthCare Professional)</p>
+        <div class="star-rating">★★★★☆</div>
+   <p>Every blood donation counts. It's heartwarming to see so many people willing to help others in need.		</p>
+    </div>
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_male_C48XchXo.webp" alt="Person 5"><p>Parv(Blood Donor)</p>
+        <div class="star-rating">★★★★★</div>
+        <p>Thanks to the blood bank, I received the blood I needed during a critical time. It truly made a difference.	</p>
+
+    </div>
+    <div class="container5">
+        <img src="https://10web-site.ai/90/wp-content/uploads/sites/102/2024/07/thumbnail_female_BGHTAtRz.webp" alt="Person 6"><p>Sarah Lee(Blood Recipent)</p>
+        <div class="star-rating">★★★★★</div>
+        <p>The donation process was smooth and well-organized. I encourage everyone to donate blood.</p>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="logo.jpg" alt="Website Logo">
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4>Blood Donation</h4>
+            <p>Donating blood can save lives. Every drop counts.</p>
+            <p>Blood is provided free of cost to those in need.</p>
+        </div>
+        <div class="footer-legal">
+            <h4>Legal</h4>
+          <p>Terms of service</p>
+          <p>Privacy Policy</p>
+        </div>
+    </div>
+    <hr>
+    <p>&copy; 2024 Blood Bank. All rights reserved.</p>
+    <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+
+
+</body>
+</html>
